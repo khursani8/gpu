@@ -9,6 +9,6 @@ jobs:
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo  "```nvidia-smi```" > report.md
+          echo -e "```nvidia-smi```\\ntest" > report.md
           
           cml-send-comment report.md
