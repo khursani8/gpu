@@ -10,5 +10,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo  "```nvidia-smi```" > report.md
-          
+          echo "\n\nby sani" >> report.md
           cml-send-comment report.md
